@@ -4,19 +4,17 @@
   <script src="https://smtpjs.com/v3/smtp.js">
   </script>
   <script type="text/javascript">
-    //7b1f4df6-2b10-43de-bf78-c576e9ed99ce
-    //lab_access@mail.com
-    //2CC05133EE74145345A1433B855FF35AE293
+
     function sendEmail() {
       if((document.getElementById('edit_3d66e75c').value).length == 0){
         alert("Please fill out all fields before sending");
       }
       else{
         Email.send({
-          SecureToken : "2c88dd87-ea45-4d6f-a8a2-fef3ca4b387d",
-          To : document.getElementById('edit_7e041a8c').value,
-          From : "khanmomin246810@gmail.com",
-          Subject : document.getElementById('edit_8884fa5').value, //edit_8884fa5
+          SecureToken : "50604543-91d0-4ff7-986b-533be0feb25f",
+          To : "Hsiang-Yuan.Lin@camh.ca",
+          From : "lab_Account@mail.com",
+          Subject : document.getElementById('edit_7e041a8c').value, //edit_8884fa5
           Body : document.getElementById('edit_3d66e75c').value//edit_3d66e75c
         }).then(
           message => alert(message)
